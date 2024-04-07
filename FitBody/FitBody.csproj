@@ -58,15 +58,28 @@
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Poppins-Regular.ttf" />
 	  <None Remove="Resources\Fonts\Poppins-SemiBold.ttf" />
+	  <None Remove="Resources\Images\clock.png" />
+	  <None Remove="Resources\Images\gender.png" />
+	  <None Remove="Resources\Images\height.png" />
+	  <None Remove="Resources\Images\id.png" />
 	  <None Remove="Resources\Images\LOGO.png" />
+	  <None Remove="Resources\Images\mail.png" />
 	  <None Remove="Resources\Images\password.png" />
 	  <None Remove="Resources\Images\user.png" />
+	  <None Remove="Resources\Images\userBox.png" />
+	  <None Remove="Resources\Images\width.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\Create.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

@@ -28,7 +28,7 @@
 
         <VerticalStackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" >
             <Label Text="LOGIN" FontFamily="PoppinsSemiBold" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center"/>
-            <Label Text="Welcome to FitBody!" FontFamily="PoppinsRegular" FontSize="15" HorizontalOptions="Center" TextColor="#404040"/>
+            <Label Text="Welcome Again!" FontFamily="PoppinsRegular" FontSize="15" HorizontalOptions="Center" TextColor="#404040"/>
             <Grid ColumnDefinitions="auto, *" RowDefinitions=".50*, .50*" Margin="0, 20">
                 <Image Grid.Column="0"
                    Grid.Row="0"
@@ -78,7 +78,7 @@
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
-                    <Button Text="Create an Account" FontFamily="PoppinsSemiBold" Background="White" TextColor="MidnightBlue" Margin="0, 30"></Button>
+                    <Button Text="Create an Account" FontFamily="PoppinsSemiBold" Background="White" TextColor="MidnightBlue" Margin="0, 30" Clicked="OnCreateAccountClicked"></Button>
                 </StackLayout>
             </Frame>
         </Frame>

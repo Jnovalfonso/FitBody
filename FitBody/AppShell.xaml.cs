@@ -9,6 +9,7 @@ namespace FitBody
             InitializeComponent();
 
             Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
+            Routing.RegisterRoute(nameof(Create), typeof(Create));
         }
     }
 }
