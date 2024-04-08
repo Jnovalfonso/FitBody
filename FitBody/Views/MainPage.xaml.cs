@@ -21,7 +21,7 @@ namespace FitBody.Views
 
         private void OnCreateAccountClicked(object sender, EventArgs e)
         {
-            Shell.Current.GoToAsync(nameof(Create));
+            Shell.Current.GoToAsync(nameof(CreateCustomer));
         }
     }
 
