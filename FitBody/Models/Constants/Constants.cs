@@ -8,6 +8,8 @@ namespace FitBody.Models
 {
     public static class Constants
     {
+        
+
         public const string DatabaseFile = "Database\\FitBodyDB.db";
 
         public static string DbPath =>
