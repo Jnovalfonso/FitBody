@@ -1,14 +1,14 @@
 namespace FitBody.Views.Employee;
 
-public partial class EmployeePage : ContentPage
+public partial class EmployeManager : ContentPage
 {
-	public EmployeePage()
+	public EmployeManager()
 	{
 		InitializeComponent();
 	}
 
     private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
-		Shell.Current.GoToAsync(nameof(EMadduser));
+        Shell.Current.GoToAsync(nameof(EMadduser));
     }
 }
