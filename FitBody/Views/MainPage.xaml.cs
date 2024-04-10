@@ -16,7 +16,7 @@ namespace FitBody.Views
 
         private void OnLogEmployeeClicked(object sender, EventArgs e)
         {
-
+            Shell.Current.GoToAsync(nameof(LoginEmployee));
         }
 
         private void OnCreateAccountClicked(object sender, EventArgs e)

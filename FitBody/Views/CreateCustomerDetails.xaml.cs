@@ -97,7 +97,6 @@ public partial class CreateCustomerDetails : ContentPage
                 _newCustomer.Height = _height;
                 _newCustomer.Weight = _weight;
 
-                Debug.WriteLine("LALALALALLA");
                 Debug.WriteLine(newCustomer.ToString());
             }
         }

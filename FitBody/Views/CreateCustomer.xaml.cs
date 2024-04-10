@@ -11,7 +11,7 @@ public partial class CreateCustomer : ContentPage
 
     private void OnCreateClicked(object sender, EventArgs e)
     {
-        Customer newCustomer = new Customer(username.Text, name.Text, password.Text, email.Text);
+        Customer newCustomer = new Customer(username.Text, name.Text, email.Text, password.Text);
         var navigationParameter = new ShellNavigationQueryParameters { { "customer", newCustomer} };
         Shell.Current.GoToAsync(nameof(CreateCustomerDetails),navigationParameter);
 

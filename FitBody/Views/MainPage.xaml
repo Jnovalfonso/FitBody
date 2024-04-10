@@ -63,7 +63,7 @@
 
             <Label Text="OR" HorizontalOptions="Center" FontFamily="PoppinsSemiBold" FontSize="17" Margin="0, 20"/>
 
-            <Button Text="Login as Employee" FontFamily="PoppinsSemiBold" Background="{StaticResource BackgroundGradient2}"></Button>
+            <Button Text="Login as Employee" FontFamily="PoppinsSemiBold" Background="{StaticResource BackgroundGradient2}" Clicked="OnLogEmployeeClicked"></Button>
         </VerticalStackLayout>
 
         <Frame Grid.Column="1" Background="{StaticResource BackgroundGradient3}" BorderColor="Transparent" CornerRadius="0" Padding="50, 200, 50, 200">

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using FitBody.Models;
+using Microsoft.Extensions.Logging;
 
 namespace FitBody
 {
