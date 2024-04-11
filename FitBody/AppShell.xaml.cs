@@ -1,4 +1,5 @@
 ﻿using FitBody.Views;
+using FitBody.Views.Employee;
 
 namespace FitBody
 {
@@ -13,6 +14,8 @@ namespace FitBody
             Routing.RegisterRoute(nameof(CreateCustomerDetails), typeof(CreateCustomerDetails));
             Routing.RegisterRoute(nameof(LoginEmployee), typeof(LoginEmployee));
             Routing.RegisterRoute(nameof(EmployeePage), typeof(EmployeePage));
+            Routing.RegisterRoute(nameof(EmployeManager),typeof(EmployeManager));
+            Routing.RegisterRoute(nameof(EMadduser), typeof(EMadduser));
 
         }
     }
