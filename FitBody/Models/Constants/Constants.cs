@@ -14,5 +14,13 @@ namespace FitBody.Models
          Path.Combine(AppDomain.CurrentDomain.BaseDirectory,
          @"..\..\..\..\..\", DatabaseFile);
 
+        static string RoutineFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\", @"..\", @"..\", @"..\", @"..\", @"Resources\", @"Raw\", @"Routines.json");
+        public static string RoutinePath = Path.GetFullPath(RoutineFile);
+
+        static string WorkoutFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\", @"..\", @"..\", @"..\", @"..\", @"Resources\", @"Raw\", @"Workouts.json");
+        public static string WorkoutPath = Path.GetFullPath(WorkoutFile);
+
+        static string ExerciseFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\", @"..\", @"..\", @"..\", @"..\", @"Resources\", @"Raw\", @"Exercises.json");
+        public static string ExercisePath = Path.GetFullPath(ExerciseFile);
     }
 }

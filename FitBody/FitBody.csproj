@@ -68,6 +68,7 @@
 	  <None Remove="Resources\Images\user.png" />
 	  <None Remove="Resources\Images\userBox.png" />
 	  <None Remove="Resources\Images\width.png" />
+	  <None Remove="Resources\Raw\Routines.json" />
 	</ItemGroup>
 
 	<ItemGroup>

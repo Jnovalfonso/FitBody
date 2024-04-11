@@ -1,4 +1,5 @@
-﻿using System.Formats.Tar;
+﻿using FitBody.Models.RoutineModels;
+using System.Formats.Tar;
 
 namespace FitBody.Views
 {

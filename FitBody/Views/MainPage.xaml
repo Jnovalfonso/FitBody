@@ -59,7 +59,7 @@
                    BackgroundColor="#98ABEE"/>
             </Grid>
 
-            <Button Text="Login Now" FontFamily="PoppinsSemiBold" Background="{StaticResource BackgroundGradient}"></Button>
+            <Button Text="Login Now" FontFamily="PoppinsSemiBold" Background="{StaticResource BackgroundGradient}" Clicked="OnLogUserClicked"></Button>
 
             <Label Text="OR" HorizontalOptions="Center" FontFamily="PoppinsSemiBold" FontSize="17" Margin="0, 20"/>
 

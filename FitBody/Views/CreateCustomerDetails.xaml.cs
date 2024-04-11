@@ -98,6 +98,8 @@ public partial class CreateCustomerDetails : ContentPage
                 _newCustomer.Weight = _weight;
 
                 Debug.WriteLine(newCustomer.ToString());
+
+
             }
         }
 
