@@ -23,16 +23,18 @@ namespace FitBody.Models.RoutineModels
         static Dictionary<int, Workout> workoutDictionary = workouts.ToDictionary(w => w.Id);
 
         static string routinesJson = File.ReadAllText(routinePath);
-        static List<Routine> routines = JsonSerializer.Deserialize<List<Routine>>(routinesJson);
+        public static List<Routine> routines = JsonSerializer.Deserialize<List<Routine>>(routinesJson);
+        public static Dictionary<int, Routine> routineDictionary = 
+            routines.ToDictionary(r => r.Id);
 
-        private static void SetRoutines()
+        public static void SetRoutines()
         {
             foreach (var routine in routines)
             {
                 routine.PopulateWorkouts(workoutDictionary);
             }
         }
-        private static void SetWorkouts()
+        public static void SetWorkouts()
         {
             foreach (var workout in workouts)
             {

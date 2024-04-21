@@ -36,7 +36,8 @@
                    Margin="0, 0, 0, 12"/>
                 <Entry Grid.Column="1"
                    Grid.Row="0"
-                   Placeholder="Username or Email"
+                   x:Name="username"
+                   Placeholder="Username"
                    FontFamily="PoppinsRegular"
                    FontSize="13"
                    Margin="0, 0, 0, 30" 
@@ -49,6 +50,7 @@
                    Source="password.png"/>
                 <Entry Grid.Column="1"
                    Grid.Row="1"
+                   x:Name="password"
                    Placeholder="Password"
                    IsPassword="True"
                    FontFamily="PoppinsRegular"
@@ -64,6 +66,8 @@
             <Label Text="OR" HorizontalOptions="Center" FontFamily="PoppinsSemiBold" FontSize="17" Margin="0, 20"/>
 
             <Button Text="Login as Employee" FontFamily="PoppinsSemiBold" Background="{StaticResource BackgroundGradient2}" Clicked="OnLogEmployeeClicked"></Button>
+
+            <Button Text="About Us" FontFamily="PoppinsSemiBold" BackgroundColor="Transparent" BorderColor="MidnightBlue" BorderWidth="1" TextColor="MidnightBlue" Clicked="OnAboutUsClicked" Margin="0, 50"></Button>
         </VerticalStackLayout>
 
         <Frame Grid.Column="1" Background="{StaticResource BackgroundGradient3}" BorderColor="Transparent" CornerRadius="0" Padding="50, 200, 50, 200">

@@ -61,12 +61,16 @@
 	  <None Remove="Resources\Images\adduser.png" />
 	  <None Remove="Resources\Images\clock.png" />
 	  <None Remove="Resources\Images\gender.png" />
+	  <None Remove="Resources\Images\groupexercising.png" />
 	  <None Remove="Resources\Images\height.png" />
+	  <None Remove="Resources\Images\home.png" />
 	  <None Remove="Resources\Images\id.png" />
 	  <None Remove="Resources\Images\LOGO.png" />
 	  <None Remove="Resources\Images\mail.png" />
 	  <None Remove="Resources\Images\password.png" />
 	  <None Remove="Resources\Images\removeuser.png" />
+	  <None Remove="Resources\Images\routine.png" />
+	  <None Remove="Resources\Images\schedule.png" />
 	  <None Remove="Resources\Images\updateuser.png" />
 	  <None Remove="Resources\Images\user.png" />
 	  <None Remove="Resources\Images\userBox.png" />
@@ -88,22 +92,46 @@
 	  <Compile Update="Views\CreateCustomer.xaml.cs">
 	    <DependentUpon>CreateCustomer.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\CustomerPages\TabsCustomer.xaml.cs">
+	    <DependentUpon>TabsCustomer.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\AboutUs.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\CreateCustomer.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\CreateCustomerDetails.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Employee\EMadduser.xaml">
+	  <MauiXaml Update="Views\CustomerPages\ClassSchedule.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Employee\EmployeePage.xaml">
+	  <MauiXaml Update="Views\CustomerPages\CustomerHomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Employee\EmployeManager.xaml">
+	  <MauiXaml Update="Views\CustomerPages\StartWorkout.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\CustomerPages\TabsCustomer.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\CustomerPages\Profile.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\CustomerPages\Routines.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\EmployeePages\EMadduser.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\EmployeePages\EmployeePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\EmployeePages\EmployeManager.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\LoginEmployee.xaml">

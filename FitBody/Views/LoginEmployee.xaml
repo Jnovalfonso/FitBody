@@ -46,7 +46,7 @@
             <Entry x:Name="EmployeePassword" HeightRequest="50" WidthRequest=" 605" Margin="25" TextColor="#260272" Placeholder="Enter your password" BackgroundColor="White" FontSize="Medium"></Entry>
 
             <Button Text="Login" FontFamily="PoppinsSemiBold" BackgroundColor="White" TextColor="MidnightBlue" FontSize="22" WidthRequest="300" Margin="10" Clicked="OnLoginClicked"></Button>
-            <Button Text="Back" FontFamily="PoppinsSemiBold" Background="MidnightBlue" FontSize="22" BorderColor="White" BorderWidth="1" WidthRequest="300" Margin="10"></Button>
+            <Button Text="Back" FontFamily="PoppinsSemiBold" Background="MidnightBlue" FontSize="22" BorderColor="White" BorderWidth="1" WidthRequest="300" Margin="10" Clicked="OnBackClicked"></Button>
 
         </VerticalStackLayout>
     </Frame>

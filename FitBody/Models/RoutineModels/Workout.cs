@@ -13,14 +13,16 @@ namespace FitBody.Models.RoutineModels
         public string Difficulty { get; set; }
         public List<Exercise> Exercises { get; set; }
         public List<int> ExerciseIds { get; set; }
+        public string Category { get; set; }
 
-        public Workout(int id, string name, string difficulty, List<int> exerciseIds)
+        public Workout(int id, string name, string difficulty, List<int> exerciseIds, string category)
         {
             Id = id;
             Name = name;
             Difficulty = difficulty;
             ExerciseIds = exerciseIds;
             Exercises = new List<Exercise>();
+            Category = category;
         }
 
         public void PopulateExercises(Dictionary<int, Exercise> exerciseDictionary)

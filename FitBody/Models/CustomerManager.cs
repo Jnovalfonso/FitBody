@@ -12,7 +12,6 @@ namespace FitBody.Models
     public class CustomerManager
     {
         private SQLiteConnection _database;
-
         public CustomerManager()
         {
             _database = new SQLiteConnection(Constants.DbPath);
@@ -24,8 +23,6 @@ namespace FitBody.Models
         {
             _database.Insert(customer);
         }
-
-
 
         public List<Customer> GetAllCustomers()
         {
@@ -44,7 +41,7 @@ namespace FitBody.Models
 
             if (customer == null)
             {
-                Debug.WriteLine("Employee doesn't exist");
+                Debug.WriteLine("Customer doesn't exist");
                 return false;
             }
 
@@ -58,6 +55,18 @@ namespace FitBody.Models
                 Debug.WriteLine("Incorrect Password");
                 return false;
             }
+        }
+
+        public Customer GetCustomer(string customerUsername)
+        {
+            Customer customer = _database.Table<Customer>().FirstOrDefault(c => c.Username == customerUsername);
+            
+            return customer;
+        }
+
+        public void UpdateCustomer (Customer customer)
+        {
+            _database.Update(customer);
         }
     }
 }

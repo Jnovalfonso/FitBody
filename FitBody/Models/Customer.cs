@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using FitBody.Models.RoutineModels;
 namespace FitBody.Models
 {
     public class Customer
@@ -18,8 +18,7 @@ namespace FitBody.Models
         private string _gender;
         private int _height;
         private int _weight;
-        private bool _isPremium;
-        //private Routine _userRoutine;
+        private int _userRoutineId;
 
         [Required]
         [PrimaryKey]
@@ -70,11 +69,12 @@ namespace FitBody.Models
             get { return _weight; }
             set { _weight = value; }
         }
+
         [Required]
-        public bool IsPremium
+        public int UserRoutineId
         {
-            get { return _isPremium; }
-            set { _isPremium = value; }
+            get { return _userRoutineId; }
+            set { _userRoutineId = value; }
         }
 
         public Customer()
@@ -88,7 +88,6 @@ namespace FitBody.Models
             Email = email;
             Password = password;
         }
-
         public override string ToString()
         {
             return $"Username: {Username}, Name: {Name}, Email: {Email}, Age: {Age}, Gender: {Gender}, Height: {Height}, Weight: {Weight}";

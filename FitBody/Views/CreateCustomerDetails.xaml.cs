@@ -2,6 +2,7 @@ using FitBody.Models;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq.Expressions;
+using FitBody;
 
 namespace FitBody.Views;
 
@@ -97,9 +98,11 @@ public partial class CreateCustomerDetails : ContentPage
                 _newCustomer.Height = _height;
                 _newCustomer.Weight = _weight;
 
-                Debug.WriteLine(newCustomer.ToString());
+                CustomerManager customerManager = new CustomerManager();
 
+                customerManager.AddCustomer(_newCustomer);
 
+                Shell.Current.GoToAsync("../..");
             }
         }
 

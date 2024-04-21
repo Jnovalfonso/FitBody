@@ -32,4 +32,9 @@ public partial class LoginEmployee : ContentPage
             DisplayAlert("Invalid Password/email", "Error", "Ok");
         }
     }
+
+    private void OnBackClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("..");
+    }
 }
