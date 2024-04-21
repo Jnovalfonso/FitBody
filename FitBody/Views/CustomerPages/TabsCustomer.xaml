@@ -7,6 +7,9 @@
     <customerViews:CustomerHomePage Title="Home" />
     <views:ClassSchedule Title="Class Schedule" />
     <customerViews:Routines Title="Routines" />
+    <customerViews:BmiCalculator Title="BMI Calculator" />
+    <customerViews:ExclusiveMember Title="Exclusive Members" />
     <customerViews:Profile Title="Profile" />
+    
 </TabbedPage>
 
