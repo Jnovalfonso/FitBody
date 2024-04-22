@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.Employee.EMdeleteuser"
+             >
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry x:Name="UserName" Placeholder="Username" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
+        <Entry x:Name="Password" Placeholder="Password" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
+        <Button x:Name="finduser_btn_2" Text="delete"  TextColor="White" Clicked="finduser_btn_2_Clicked"  FontSize="Medium" BackgroundColor="MidnightBlue" Margin="25" CornerRadius="5" HeightRequest="40" WidthRequest="300"></Button>
+        <Button x:Name="Back_btn_2" Text="Back"  TextColor="White" Clicked="Back_btn_2_Clicked_1"  FontSize="Medium" BackgroundColor="Black" Margin="25" BorderColor="White" BorderWidth="1" CornerRadius="5
+" HeightRequest="40" WidthRequest="300" ></Button>
+    </VerticalStackLayout>
+</ContentPage>

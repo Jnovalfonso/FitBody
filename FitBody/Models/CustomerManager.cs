@@ -34,6 +34,19 @@ namespace FitBody.Models
             _database.DropTable<Customer>();
         }
 
+        public Customer CustomerBasedonUsername(string username)
+        {
+            List<Customer> customer = _database.Table<Customer>().ToList();
+            foreach (Customer c in customer)
+            {
+                if (c.Username == username)
+                {
+                    return c;
+                }
+            }
+            return null;
+        }
+
         public bool IsCustomer(string customerUsername, string customerPassword)
         {
             var customer = _database.Table<Customer>().FirstOrDefault(c => c.Username == customerUsername);
@@ -64,9 +77,17 @@ namespace FitBody.Models
             return customer;
         }
 
+        public void DeleteUserfromUSername(string username)
+        {
+            var customer = _database.Table<Customer>().FirstOrDefault(c => c.Username == username);
+            _database.Delete(customer);
+        }
+
         public void UpdateCustomer (Customer customer)
         {
             _database.Update(customer);
         }
+
+
     }
 }

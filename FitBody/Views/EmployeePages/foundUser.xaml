@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FitBody.Views.EMadduser"
-             >
+             x:Class="FitBody.Views.Employee.foundUser"
+             Title="foundUser">
     <ScrollView>
         <VerticalStackLayout>
             <Label 
-            />
+        Text="Welcome to .NET MAUI!"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
             <Entry x:Name="UserName" Placeholder="Username" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
             <Entry x:Name="Name" Placeholder="Name" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
             <Entry x:Name="Email" Placeholder="Email" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
@@ -16,9 +18,8 @@
             <Entry x:Name="Height" Placeholder="Height(cm)" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
             <Entry x:Name="Weight" Placeholder="Weight(Kg)" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
             <Entry x:Name="Premium" Placeholder="Premium" HeightRequest="60" WidthRequest="424" Margin="21" TextColor="#260272"></Entry>
-            <Button x:Name="Adduserbtn" Text="Add"  TextColor="White" Clicked="Adduserbtn_Clicked"  FontSize="Medium" BackgroundColor="MidnightBlue" Margin="25" CornerRadius="5" HeightRequest="40" WidthRequest="300"></Button>
-            <Button x:Name="Back" Text="Back" Clicked="Back_Clicked" TextColor="White"  FontSize="Medium" BackgroundColor="Black" Margin="25" BorderColor="White" BorderWidth="1" CornerRadius="5
-                " HeightRequest="40" WidthRequest="300" ></Button>
+            <Button x:Name="Adduserbtn" Text="Update"  TextColor="White" Clicked="Adduserbtn_Clicked"  FontSize="Medium" BackgroundColor="MidnightBlue" Margin="25" CornerRadius="5" HeightRequest="40" WidthRequest="300"></Button>
+            <Button x:Name="Back" Text="Back" Clicked="Back_Clicked" TextColor="White"  FontSize="Medium" BackgroundColor="Black" Margin="25" BorderColor="White" BorderWidth="1"  HeightRequest="40" WidthRequest="300" CornerRadius="5"></Button>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

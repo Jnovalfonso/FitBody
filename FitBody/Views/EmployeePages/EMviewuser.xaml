@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitBody.Views.Employee.EMviewuser"
+             >
+    <ScrollView>
+        <VerticalStackLayout Background="Blue">
+            <Label 
+            Text="Welcome TO siuu!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Button x:Name="Vie_customer" Text="View cusotmer" Clicked="Vie_customer_Clicked" TextColor="White"  FontSize="Medium" BackgroundColor="#260272" Margin="25" BorderColor="White" BorderWidth="1" CornerRadius="5
+                " HeightRequest="40" WidthRequest="300" ></Button>
+            <Button x:Name="Back_btn" Text="Back" Clicked="Back_btn_Clicked" TextColor="White"  FontSize="Medium" BackgroundColor="Black" Margin="25" BorderColor="White" BorderWidth="1" CornerRadius="5
+                " HeightRequest="40" WidthRequest="300" ></Button>
+            <Frame Margin="21" BorderColor="Black">
+                <ListView x:Name="ListViewCustomer" Margin="21">
+                    <ListView.ItemTemplate  >
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                                    <Label FontSize="Medium"  FontAttributes="Italic" Text="{Binding Username, StringFormat='Username: {0}'}" />
+                                    <Label Text="{Binding Name, StringFormat='Name: {0}'}" />
+                                    <Label Text="{Binding Password, StringFormat='Password: {0}'}" />
+                                    <Label Text="{Binding Age, StringFormat='Age: {0}' }" />
+                                    <Label Text="{Binding Height, StringFormat='Height: {0}'}" />
+                                    <Label Text="{Binding Weight, StringFormat='Weight: {0}'}" />
+                                    <Label Text="***************************************************************************************************************************"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Frame>
+        </VerticalStackLayout>
+
+    </ScrollView>
+</ContentPage>
