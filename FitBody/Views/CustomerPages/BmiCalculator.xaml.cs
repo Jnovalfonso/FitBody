@@ -1,6 +1,6 @@
-namespace BmiCalculator
+namespace FitBody.Views.CustomerPages
 {
-    public partial class MainPage : ContentPage
+    public partial class BmiCalculator : ContentPage
     {
         const double UnderWeight = 18.5;
         const double NormalWeight = 24.9;
