@@ -81,7 +81,7 @@
 
                         </StackLayout>
                         <Slider x:Name="heightSlider"
-                                ThumbColor="White"
+                                ThumbColor="Black"
                                 MaximumTrackColor="White"
                                 MinimumTrackColor="White"
                                 Value="50"
@@ -113,7 +113,7 @@
 
                         </StackLayout>
                         <Slider x:Name="weightSlider"
-                                ThumbColor="White"
+                                ThumbColor="Black"
                                 MaximumTrackColor="White"
                                 MinimumTrackColor="White"
                                 Value="50"
@@ -145,7 +145,7 @@
 
                         </StackLayout>
                         <Slider x:Name="ageSlider"
-                                ThumbColor="White"
+                                ThumbColor="Black"
                                 MaximumTrackColor="White"
                                 MinimumTrackColor="White"
                                 Value="50"
