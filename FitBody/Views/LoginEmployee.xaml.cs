@@ -5,24 +5,21 @@ namespace FitBody.Views;
 
 public partial class LoginEmployee : ContentPage
 {
-	public LoginEmployee()
-	{
-		InitializeComponent();
-
-		
-	}
+    public LoginEmployee()
+    {
+        InitializeComponent();
+    }
 
     private void OnLoginClicked(object sender, EventArgs e)
-	{
+    {
+        //declaring varibles
+        //stroing the inputed value into text
         string email = EmployeEmail.Text;
         string password = EmployeePassword.Text;
         bool isEmployee;
-
         EmployeeManager employeeManager = new EmployeeManager();
-
-
+        //Checking eather the crediants are right or wrong
         isEmployee = employeeManager.IsEmployee(email, password);
-
         if (isEmployee == true)
         {
             Shell.Current.GoToAsync(nameof(EmployeePage));
@@ -32,8 +29,10 @@ public partial class LoginEmployee : ContentPage
             DisplayAlert("Invalid Password/email", "Error", "Ok");
         }
     }
+    //Going back
 
-    private void OnBackClicked(object sender, EventArgs e)
+
+    private void BKACBRN_Clicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync("..");
     }
