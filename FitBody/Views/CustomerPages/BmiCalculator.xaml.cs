@@ -6,7 +6,7 @@ namespace FitBody.Views.CustomerPages
         const double NormalWeight = 24.9;
         const double OverWeight = 29.9;
 
-        public MainPage()
+        public BmiCalculator()
         {
             InitializeComponent();
         }
