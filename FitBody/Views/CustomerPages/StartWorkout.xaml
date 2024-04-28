@@ -44,7 +44,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <HorizontalStackLayout HorizontalOptions="Center">
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0, 0, 0, 20">
                 <Button Text="Back To Home Page" FontFamily="PoppinsSemiBold" BackgroundColor="White" TextColor="MidnightBlue" BorderColor="Blue" BorderWidth="1" Clicked="OnBackClicked"></Button>
                 <Label Text="OR" HorizontalOptions="Center" FontFamily="PoppinsSemiBold" FontSize="17" Margin="20" />   
                 <Button Text="Finish Workout" FontFamily="PoppinsSemiBold" BackgroundColor="#030E3E" BorderWidth="1" Clicked="OnFinishClicked"></Button>

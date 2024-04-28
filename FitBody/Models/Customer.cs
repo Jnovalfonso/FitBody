@@ -19,8 +19,7 @@ namespace FitBody.Models
         private int _height;
         private int _weight;
         private int _userRoutineId;
-        private int _isPremiumInt;
-        private bool _isPremium;
+        private int _isPremium;
 
         [Required]
         [PrimaryKey]
@@ -80,27 +79,13 @@ namespace FitBody.Models
         }
 
         [Required]
-        public int IsPremiumInt
-        {
-            get { return _isPremiumInt;}
-            set 
-            { 
-                _isPremiumInt = value;
-                if (value == 0)
-                {
-                    IsPremium = false;
-                }
-                else
-                {
-                    IsPremium = true;
-                }
-            }
-        } 
-
-        public bool IsPremium
+        public int IsPremium
         {
             get { return _isPremium; }
-            set { _isPremium = value; }
+            set
+            {
+                _isPremium = value;
+            }
         }
 
         public Customer()
